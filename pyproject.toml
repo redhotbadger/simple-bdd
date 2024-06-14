@@ -1,0 +1,60 @@
+[tool.poetry]
+name = "simple-bdd"
+version = "0.0.0"
+description = "A simple BDD library for testing python code."
+authors = ["RedHotBadger"]
+readme = "README.md"
+homepage = "https://github.com/redhotbadger/simple-bdd"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+pytest = [
+    {version = "^8.2.2", python = "3.10"},
+    {version = "^8.2.2", python = "^3.11"}
+]
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.semantic_release]
+logging_use_named_masks = true
+version_toml = ["pyproject.toml:tool.poetry.version"]
+commit_parser = "angular"
+branch = "main"
+upload_to_pypi = false
+upload_to_release = true
+build_command = "pip install poetry && poetry build"
+
+[tool.semantic_release.changelog]
+exclude_commit_patterns = [
+  '''chore(?:\([^)]*?\))?: .+''',
+  '''ci(?:\([^)]*?\))?: .+''',
+  '''refactor(?:\([^)]*?\))?: .+''',
+  '''style(?:\([^)]*?\))?: .+''',
+  '''test(?:\([^)]*?\))?: .+''',
+  '''build\((?!deps\): .+)''',
+  '''Merged? .*''',
+  '''Initial commit*''',
+]
+
+[tool.semantic_release.commit_parser_options]
+allow_zero_version = false
+allowed_tags = [
+    "build",
+    "chore",
+    "ci",
+    "docs",
+    "feat",
+    "fix",
+    "perf",
+    "style",
+    "refactor",
+    "test"
+]
+major_on_zero = true
+minor_tags = ["feat"]
+patch_tags = ["fix", "perf"]
+
+[tool.semantic_release.publish]
+upload_to_vcs_release = true

@@ -1,0 +1,3 @@
+
+class BddContext(object):
+    pass
