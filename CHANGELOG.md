@@ -2,14 +2,10 @@
 
 
 
-## v0.0.0 (2024-06-14)
+## v0.1.0 (2024-06-14)
 
-### Release
+### Feature
 
-* release: First version of the simple-bdd library
+* feat: First version of the simple-bdd library
 
-A BDD library for testing python code that puts simplicity over magic features. ([`b6682a3`](https://github.com/redhotbadger/simple-bdd/commit/b6682a3576f24c951597dc34139915c07f2f9dc3))
-
-### Unknown
-
-* Initial commit ([`ee18907`](https://github.com/redhotbadger/simple-bdd/commit/ee1890781c98550a1c2b37a1cd447c2c46c4473b))
+A BDD library for testing python code that puts simplicity over magic features. ([`1d375c9`](https://github.com/redhotbadger/simple-bdd/commit/1d375c9c242bb097d587d4d8d159821e1863fcc8))
