@@ -35,7 +35,8 @@ exclude_commit_patterns = [
   '''test(?:\([^)]*?\))?: .+''',
   '''build\((?!deps\): .+)''',
   '''Merged? .*''',
-  '''Initial commit*''',
+  '''Merge *''',
+  '''Initial commit*'''
 ]
 
 [tool.semantic_release.commit_parser_options]
