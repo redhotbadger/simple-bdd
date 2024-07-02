@@ -7,7 +7,7 @@ readme = "README.md"
 homepage = "https://github.com/redhotbadger/simple-bdd"
 
 [tool.poetry.dependencies]
-python = "^3.11"
+python = "^3.10"
 pytest = [
     {version = "^8.2.2", python = "3.10"},
     {version = "^8.2.2", python = "^3.11"}
