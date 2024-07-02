@@ -7,7 +7,7 @@ readme = "README.md"
 homepage = "https://github.com/redhotbadger/simple-bdd"
 
 [tool.poetry.dependencies]
-python = "^3.11"
+python = "^3.10"
 pytest = [
     {version = "^8.2.2", python = "3.10"},
     {version = "^8.2.2", python = "^3.11"}
@@ -35,7 +35,8 @@ exclude_commit_patterns = [
   '''test(?:\([^)]*?\))?: .+''',
   '''build\((?!deps\): .+)''',
   '''Merged? .*''',
-  '''Initial commit*''',
+  '''Merge *''',
+  '''Initial commit*'''
 ]
 
 [tool.semantic_release.commit_parser_options]
