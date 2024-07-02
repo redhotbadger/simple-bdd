@@ -1,8 +1,8 @@
 name: Build and Test Simple BDD Python Library
 on:
   push:
-    branches:
-      - 'test'
+    branches-ignore:
+      - 'main'
 
 permissions:
   contents: write
