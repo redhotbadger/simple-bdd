@@ -8,7 +8,12 @@ homepage = "https://github.com/redhotbadger/simple-bdd"
 
 [tool.poetry.dependencies]
 python = "^3.10"
-pytest = "^8.4.2"
+pytest = "^9.0.0"
+
+[tool.pytest.ini_options]
+markers = [
+    "run: marks tests that participate in ordered execution",
+]
 
 [build-system]
 requires = ["poetry-core"]
