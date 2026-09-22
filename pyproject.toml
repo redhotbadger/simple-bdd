@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "simple-bdd"
-version = "0.2.0"
+version = "0.3.0"
 description = "A simple BDD library for testing python code."
 authors = ["RedHotBadger"]
 readme = "README.md"
@@ -8,10 +8,7 @@ homepage = "https://github.com/redhotbadger/simple-bdd"
 
 [tool.poetry.dependencies]
 python = "^3.10"
-pytest = [
-    {version = "^8.2.2", python = "3.10"},
-    {version = "^8.2.2", python = "^3.11"}
-]
+pytest = "^8.4.2"
 
 [build-system]
 requires = ["poetry-core"]
