@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "simple-bdd"
-version = "1.0.0"
+version = "1.0.1"
 description = "A simple BDD library for testing python code."
 authors = ["RedHotBadger"]
 readme = "README.md"
